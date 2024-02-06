@@ -1,0 +1,70 @@
+{
+    "participant_id": {
+        "LongName": "",
+        "Description": "id of the participant"
+    },
+    "age": {
+        "LongName": "",
+        "Description": "age of the participant",
+        "Units": "years"
+    },
+    "sex": {
+        "LongName": "",
+        "Description": "sex of the participant as reported by the participant",
+        "Levels": {
+            "M": "male",
+            "F": "female"
+        }
+    },
+    "group": {
+        "LongName": "",
+        "Description": "experimental group the participant belonged to",
+        "Levels": {
+            "1": "control",
+            "2": "baseline",
+            "3": "sleep restriction",
+            "4": "total sleep deprivation"
+        }
+    },
+    "site": {
+        "LongName": "scanning site",
+        "Description": "site where the scans were obtained"
+    },
+    "ksqi_score": {
+        "LongName": "karolinska sleep questionnaire index score",
+        "Description": "total score obtained on the sleep quality section of the ksq"
+    },
+    "kss_score_baseline": {
+        "LongName": "karolinska sleepiness scale baseline",
+        "Description": "score obtained on kss questionnaire at baseline"
+    },
+    "kss_score_sd": {
+        "LongName": "karolinska sleepiness scale sleep deprived",
+        "Description": "score obtained on kss questionnaire after sleep deprivation"
+    },
+    "pvt_meanrt_baseline": {
+        "LongName": "",
+        "Description": "reaction speed of the pvt test at baseline",
+        "Units": "miliseconds"
+    },
+    "pvt_meanrt_sd": {
+        "LongName": "",
+        "Description": "reaction speed of the pvt test at baseline",
+        "Units": "miliseconds"
+    },
+    "chronotype": {
+        "LongName": "",
+        "Description": "chronotype of the participant as reported by the participant",
+        "Levels": {
+            "1": "morning",
+            "2": "evening",
+            "3": "intermediate"
+        }
+    },
+    "bmi": {
+        "LongName": "body mass index",
+        "Description": "bmi of the participant"
+    }
+
+}
+
