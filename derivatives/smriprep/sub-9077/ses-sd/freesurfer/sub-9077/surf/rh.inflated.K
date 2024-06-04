@@ -1,1 +1,0 @@
-../../../../../../../.git/annex/objects/VQ/Kg/MD5E-s488143--f008588235cb0d746fc2c2bfb458dbf1.K/MD5E-s488143--f008588235cb0d746fc2c2bfb458dbf1.K
