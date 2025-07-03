@@ -1,0 +1,30 @@
+[
+    [
+        "brain_mask",
+        [
+            "/data/project/sleep_ENIGMA_glymphatic/enigma-sd/stockholm-bids/derivatives/shiva/outputs/main_workflow/shiva_t1_preprocessing_custom_seg/_subject_id_sub-9017_ses-sd/mask_to_crop/brainmask_cropped.nii.gz",
+            "d9b2fc05b5fde751383a7d7edbd919d4"
+        ]
+    ],
+    [
+        "input_image",
+        [
+            "/data/project/sleep_ENIGMA_glymphatic/enigma-sd/stockholm-bids/derivatives/shiva/outputs/main_workflow/shiva_t1_preprocessing_custom_seg/_subject_id_sub-9017_ses-sd/crop/sub-9017_ses-sd_T1_resampled_defaced_cropped.nii.gz",
+            "1e4456737b3dea3b1fc9f6072361900d"
+        ]
+    ],
+    [
+        "inverse",
+        false
+    ],
+    [
+        "percentile",
+        "99.0000000000"
+    ],
+    [
+        "needed_outputs",
+        [
+            "intensity_normalized"
+        ]
+    ]
+]

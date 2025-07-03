@@ -1,0 +1,22 @@
+[
+    [
+        "in_file",
+        [
+            "/data/project/sleep_ENIGMA_glymphatic/enigma-sd/stockholm-bids/derivatives/shiva/outputs/main_workflow/shiva_t1_preprocessing_custom_seg/_subject_id_sub-9088_ses-sd/conform/sub-9088_ses-sd_T1_resampled.nii.gz",
+            "1db8ff25ce1b667b15aca5380336f37a"
+        ]
+    ],
+    [
+        "mask_file",
+        [
+            "/data/project/sleep_ENIGMA_glymphatic/enigma-sd/stockholm-bids/derivatives/shiva/outputs/main_workflow/shiva_t1_preprocessing_custom_seg/_subject_id_sub-9088_ses-sd/binarize_brain_mask/resampled_thresholded.nii.gz",
+            "90d82d3454e860705ba69afde6adfef3"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_file"
+        ]
+    ]
+]

@@ -1,0 +1,30 @@
+[
+    [
+        "fixed_image",
+        [
+            "/data/project/sleep_ENIGMA_glymphatic/enigma-sd/stockholm-bids/derivatives/shiva/outputs/main_workflow/shiva_t1_preprocessing_custom_seg/_subject_id_sub-9086_ses-bl/crop/sub-9086_ses-bl_T1_resampled_defaced_cropped.nii.gz",
+            "f651bf6c76f1cfff21ba1a5f97df8f70"
+        ]
+    ],
+    [
+        "moving_image",
+        [
+            "/data/project/sleep_ENIGMA_glymphatic/enigma-sd/stockholm-bids/derivatives/shiva/outputs/main_workflow/shiva_t1_preprocessing_custom_seg/_subject_id_sub-9086_ses-bl/mask_to_conform/resampled.nii.gz",
+            "b0f1312c370aab8bb261e584031064d0"
+        ]
+    ],
+    [
+        "out_name",
+        "custom_seg_cropped.nii.gz"
+    ],
+    [
+        "spline_order",
+        0
+    ],
+    [
+        "needed_outputs",
+        [
+            "resampled_image"
+        ]
+    ]
+]

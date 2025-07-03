@@ -1,0 +1,35 @@
+[
+    [
+        "brain_mask",
+        [
+            "/data/project/sleep_ENIGMA_glymphatic/enigma-sd/stockholm-bids/derivatives/shiva/outputs/main_workflow/shiva_t1_preprocessing_custom_seg/_subject_id_sub-9005_ses-bl/mask_to_crop/brainmask_cropped.nii.gz",
+            "4288e7c88f2db5b57ebfbf21d4b76fd2"
+        ]
+    ],
+    [
+        "flair_norm_peak",
+        "0.0000000000"
+    ],
+    [
+        "flair_reg_mat",
+        []
+    ],
+    [
+        "main_norm_peak",
+        "0.6666573025"
+    ],
+    [
+        "swi_norm_peak",
+        "0.0000000000"
+    ],
+    [
+        "swi_reg_mat",
+        []
+    ],
+    [
+        "needed_outputs",
+        [
+            "csv_qc_metrics"
+        ]
+    ]
+]

@@ -1,0 +1,1 @@
+../../../../../../../.git/annex/objects/kk/78/MD5E-s67282--c727afa9030a1c4cd9e5ed329f68c003.rst/MD5E-s67282--c727afa9030a1c4cd9e5ed329f68c003.rst

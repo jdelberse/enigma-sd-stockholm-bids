@@ -1,0 +1,19 @@
+[
+    [
+        "bins",
+        64
+    ],
+    [
+        "img_normalized",
+        [
+            "/data/project/sleep_ENIGMA_glymphatic/enigma-sd/stockholm-bids/derivatives/shiva/outputs/main_workflow/shiva_t1_preprocessing_custom_seg/_subject_id_sub-9056_ses-sd/img1_final_intensity_normalization/sub-9056_ses-sd_T1_resampled_defaced_cropped_img_normalized.nii.gz",
+            "49f0108735eab711a1a2d791caf8093f"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "peak"
+        ]
+    ]
+]

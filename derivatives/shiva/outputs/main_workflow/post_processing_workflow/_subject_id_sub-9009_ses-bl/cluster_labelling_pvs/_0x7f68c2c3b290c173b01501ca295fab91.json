@@ -1,0 +1,34 @@
+[
+    [
+        "biomarker_raw",
+        [
+            "/data/project/sleep_ENIGMA_glymphatic/enigma-sd/stockholm-bids/derivatives/shiva/outputs/main_workflow/Segmentation/predict_pvs/sub-9009_ses-bl_pvs_map.nii.gz",
+            "16ff03b7179e5e0484d66a54a0b6c75d"
+        ]
+    ],
+    [
+        "brain_seg",
+        [
+            "/data/project/sleep_ENIGMA_glymphatic/enigma-sd/stockholm-bids/derivatives/shiva/outputs/main_workflow/shiva_t1_preprocessing_custom_seg/_subject_id_sub-9009_ses-bl/mask_to_crop/brainmask_cropped.nii.gz",
+            "f001052946b420131c6d77c28b97d808"
+        ]
+    ],
+    [
+        "out_name",
+        "labelled_pvs.nii.gz"
+    ],
+    [
+        "thr_cluster_size",
+        4
+    ],
+    [
+        "thr_cluster_val",
+        "0.5000000000"
+    ],
+    [
+        "needed_outputs",
+        [
+            "labelled_biomarkers"
+        ]
+    ]
+]
