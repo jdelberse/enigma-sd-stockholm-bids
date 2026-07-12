@@ -38,19 +38,29 @@
         "LongName": "karolinska sleepiness scale baseline",
         "Description": "score obtained on kss questionnaire at baseline"
     },
-    "kss_score_sd": {
-        "LongName": "karolinska sleepiness scale sleep deprived",
-        "Description": "score obtained on kss questionnaire after sleep deprivation"
+    "kss_score_followup": {
+        "LongName": "karolinska sleepiness scale at follow-up",
+        "Description": "score obtained on kss questionnaire at follow-up"
     },
     "pvt_meanrt_baseline": {
         "LongName": "",
-        "Description": "reaction speed of the pvt test at baseline",
-        "Units": "miliseconds"
+        "Description": "mean reaction time of the pvt test at baseline",
+        "Units": "seconds"
     },
-    "pvt_meanrt_sd": {
+    "pvt_meanrt_followup": {
         "LongName": "",
-        "Description": "reaction speed of the pvt test at baseline",
-        "Units": "miliseconds"
+        "Description": "mean reaction time of the pvt test at follow-up",
+        "Units": "seconds"
+    },
+    "pvt_meanrs_baseline": {
+        "LongName": "",
+        "Description": "mean reaction speed of the pvt test at baseline",
+        "Units": "1/seconds"
+    },
+    "pvt_meanrs_followup": {
+        "LongName": "",
+        "Description": "mean reaction speed of the pvt test at follow-up",
+        "Units": "1/seconds"
     },
     "chronotype": {
         "LongName": "",
