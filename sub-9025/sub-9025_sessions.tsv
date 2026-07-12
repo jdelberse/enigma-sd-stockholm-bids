@@ -1,3 +1,3 @@
-	session_id	acq_time	preMRI_KSS_Q0_rating	preMRI_KSS_Q1_rating	preMRI_KSS_Q2_rating	preMRI_KSS_Q3_rating	preMRI_KSS_Q4_rating	preMRI_KSS_Q5_rating	working_mem_KSS_rating	working_mem_perform_rating	working_mem_effort_rating
-0	ses-bl	1874-04-13T20:08:27	2	3	3	3	3	3.0	4	5	8
-1	ses-sd	1874-05-11T19:50:04	5	5	4	5	5		6	6	9
+participant_id	session_id	dicom_id	visit	condition	date	time
+sub-9025	ses-T1SR	n/a	T1	sleep restriction	1874-04-13	20:08:27
+sub-9025	ses-T2BL	n/a	T2	baseline	1874-05-11	19:50:04
