@@ -44,20 +44,10 @@
     },
     "pvt_meanrt_baseline": {
         "LongName": "",
-        "Description": "mean reaction time of the pvt test at baseline",
-        "Units": "seconds"
-    },
-    "pvt_meanrt_followup": {
-        "LongName": "",
-        "Description": "mean reaction time of the pvt test at follow-up",
-        "Units": "seconds"
-    },
-    "pvt_meanrs_baseline": {
-        "LongName": "",
         "Description": "mean reaction speed of the pvt test at baseline",
         "Units": "1/seconds"
     },
-    "pvt_meanrs_followup": {
+    "pvt_meanrt_followup": {
         "LongName": "",
         "Description": "mean reaction speed of the pvt test at follow-up",
         "Units": "1/seconds"
@@ -74,7 +64,17 @@
     "bmi": {
         "LongName": "body mass index",
         "Description": "bmi of the participant"
+    },
+    "first_session": {
+        "LongName": "",
+        "Description": ""
+    },
+    "pvt_meanrt_baseline.1": {
+        "LongName": "",
+        "Description": ""
+    },
+    "pvt_meanrt_followup.1": {
+        "LongName": "",
+        "Description": ""
     }
-
 }
-
