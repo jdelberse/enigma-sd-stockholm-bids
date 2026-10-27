@@ -4,6 +4,6 @@
 *.json annex.largefiles=nothing
 *.bvec annex.largefiles=nothing
 *.bval annex.largefiles=nothing
-README annex.largefiles=nothing
+README.md annex.largefiles=nothing
 CHANGES annex.largefiles=nothing
 .bidsignore annex.largefiles=nothing

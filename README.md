@@ -1,1 +1,153 @@
-.git/annex/objects/9k/5V/MD5E-s6355--84b0c389b73eb1384d58a4dd2f47c4fc.md/MD5E-s6355--84b0c389b73eb1384d58a4dd2f47c4fc.md
+# Stockholm Dataset (`stockholm-bids`)
+
+## Overview
+
+**NB**: This README was created for the ENIGMA-SD study. For the original Stockholm Sleepybrains README, see below.
+
+This dataset contains MRI data from a sleep manipulation study conducted at the Karolinska Institutet (Sweden). It is part of the ENIGMA-Sleep Working Group collection used to study the effects of sleep loss on glymphatic MRI indices. The data are organized according to the Brain Imaging Data Structure (BIDS) and managed with DataLad (git-annex).
+
+## Sample
+
+| Item | Value |
+|---|---|
+| Site | Stockholm |
+| Affiliation | Karolinska Institutet |
+| Country | Sweden |
+| Participants (N) | 81 |
+| Age, mean (SD), years | 46.1 (22.6) |
+| Male (%) | 49.4 |
+
+## Sleep protocol
+
+- **BL**: baseline, habitual
+- **SR**: sleep restriction, 3h TIB
+
+## Imaging data
+
+### T1-weighted (`anat/`)
+
+| Parameter | Value |
+|---|---|
+| Scanner | GE Discovery MR750 |
+| Sequence | BRAVO |
+| TR (ms) | 6.4 |
+| TE (ms) | 2.81 |
+| TI (ms) | 450 |
+| Flip angle (°) | 11 |
+
+## Data organization
+
+- `sub-<ID>/ses-<label>/`: raw BIDS data (`anat/`)
+- `participants.tsv`: participant-level information
+- `sub-<ID>/sub-<ID>_sessions.tsv`: session-level information (condition, visit, date, time)
+- `derivatives/`: processed outputs, if present
+
+File contents are tracked with git-annex. After cloning, retrieve data with `datalad get <path>`.
+
+## Original publication
+
+Nilsonne, G., Tamm, S., Schwarz, J., Almeida, R., Fischer, H., Kecklund, G., Lekander, M., Fransson, P., & Åkerstedt, T. (2017). Intrinsic brain connectivity after partial sleep deprivation in young and older adults: results from the Stockholm Sleepy Brain study. *Scientific Reports*, 7, 9422. [https://doi.org/10.1038/s41598-017-09744-7](https://doi.org/10.1038/s41598-017-09744-7)
+
+Original data: [https://openneuro.org/datasets/ds000201](https://openneuro.org/datasets/ds000201)
+
+## Contact
+
+- Jorik D. Elberse: [j.elberse@fz-juelich.de](mailto:j.elberse@fz-juelich.de)
+- Masoud Tahmasian: [m.tahmasian@fz-juelich.de](mailto:m.tahmasian@fz-juelich.de)
+
+## Background and Aim ## 
+
+Sleepiness is a brain state with pervasive effects on cognitive and
+affective functioning. However, little is known about the functional
+mechanisms and correlates of sleepiness in the awake brain. This project
+aimed to investigate overall effects of sleepiness on brain function 
+with particular regard to emotional processing.
+
+## Method and Design ##  
+
+We investigated the effects of sleep deprivation using a randomized
+cross-over design. Resting state functional connectivity was 
+investigated using functional magnetic resonance imaging (fMRI). 
+Emotional contagion was studied using concurrent fMRI and 
+electromyography (EMG) of facial muscles in response to emotional 
+expressions and empathy for pain was investigated using pictures 
+of others receiving pain stimuli. To study emotional reappraisal, 
+participants were instructed to actively up-regulate or 
+down-regulate their emotional responses to picture stimuli. 
+The participants were characterized using several rating scales, 
+biometric information, and blood sampling.
+
+## Specific Notes ##
+
+### participants.tsv File ###
+Subject ID list and subject-level variables. Please refer to the
+participants.json for guidance on how to interpret specific 
+columns in the participants.tsv file.
+
+### BIDS dataset ###
+Data were converted from DICOM source files using dcm2niix. The
+parameters were further extracted from the DICOM files using pydicom
+and converted to .json format. SeriesDates were anonymized and
+shifted to pre-1900's years and a subject-based offset added to
+the month/year that preserves time difference between initial
+and follow-up visit.
+
+T1- and T2-anatomical scans (anat/*_T{1,2}w.nii.gz) were defaced using 
+the pydeface.py software: 
+  https://github.com/poldracklab/pydeface (c1ceeb2)
+
+### derivatives Folder ###
+This folder contains the processed output from the MRIQC protocol.
+MRIQC is an automated processing pipeline designed to compute many
+image quality metrics for T1 weighted anatomical and T2* weighted
+functional scans. For more information please see:
+
+  https://github.com/poldracklab/mriqc (a5f68f5)
+
+Additional derivatives include:
+
+  - Plots of the fMRI event logs
+  - thumbnail mosaics of the high-resolution T1w and T2w scans used
+    to confirm defacing process.
+
+### sourcedata Folder ###
+This folder contains the as-provided source files used to create the
+BIDS dataset files. The only changes made to these source files were
+to remove any information that could potentially be used to identify
+the study participants. Specifically:
+
+  - EyeTrackingLogFiles: Files renamed, "TimeValues" and "TimeStamp" 
+    entries changed to "REMOVED" within each file.
+  - PresentationLogFiles: Files renamed, scrubbed of Dates, Subject
+    IDs. These files were used to create the
+       sub-9XXX_ses-{1,2}_task-<taskname>_events.tsv
+    files.
+  - PulseGatingFiles: Files renamed to remove original IDs.
+  - WorkingMemoryTestResults: Files renamed to remove original IDs.,
+    subject IDs altered to 9XXX series randomized IDs. Dates removed.
+    Times-of-day left intact.
+
+Other data that could not be included in raw form due to its binary nature:
+
+  - Physiological recordings (EMG): Converted from raw Acknowledge format
+    to compressed .tsv files using the "convert_physio_files.py" script
+    located in the code/ directory within the dataset. The output data are 
+    located within the dataset as *_physio.tsv.gz and *_physio.json pairs.
+
+### Diffusion Imaging - use these data with caution ###
+Diffusion imaging from the following subjects should be used with
+caution due to suspicious bval/bvecs tables extracted from the source
+DICOM files:
+
+    sub-9019  sub-9070  sub-9057  sub-9091  sub-9090  sub-9013  sub-9044
+    sub-9050  sub-9067  sub-9035  sub-9035  sub-9073  sub-9083  sub-9037
+    sub-9007  sub-9053  sub-9066  sub-9012  sub-9082  sub-9077  sub-9076
+    sub-9099  sub-9001
+
+### Raw Polysomnography Data ###
+Raw polysomnography data is available upon request. Please contact Gustav Nilsonne at 
+gustav.nilsonne@ki.se to request this data.
+
+### Known Issues ###
+-sub-9066/ses-1/func/sub-9066_ses-1_task-hands_events.tsv does not have all of the columns present in 
+the other events files. It only has 'onset', 'duration' and 'condition'.
